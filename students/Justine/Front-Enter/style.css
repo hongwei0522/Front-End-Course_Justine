@@ -1,0 +1,389 @@
+/* Gerenal  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", arial, sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background: white;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.logo {
+    height: 65px;
+    margin-left: 60px;
+}
+
+.logo a img {
+    height: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 60px;
+    width: 40%;
+}
+
+.nav-item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.nav-item img {
+    width: 18px;
+}
+
+
+/* Header  */
+#header {
+    background-image: url(https://frankyeah.github.io/Front-Enter/images/key-visual.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#header h1,
+#header p {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#header h1 {
+    font-size: 38px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+
+#header p {
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+.next-arrow-area {
+    position: relative;
+}
+
+.next-arrow {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 20px;
+    left: 45%;
+    top: 100px;
+}
+
+/* Test Section */
+.test-section {
+    background-image: url(/images/second-img.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.test-section:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: black;
+    opacity: .5;
+    z-index: 1;
+}
+
+.test-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.test-section p {
+    margin: 0;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 3px;
+    padding-bottom: 12px;
+}
+
+
+.btn-outline {
+    margin: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 19px;
+    color: #1ad8d3;
+    border: 1px solid #1ad8d3;
+}
+
+.test-section button {
+    padding: 3px 30px;
+}
+
+
+/* Option Section */
+.option-section {
+    background-image: url(/images/third-img.jpg);
+    height: 500px;
+    background-size: cover;
+    font-size: 19px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.option-section:after {
+    content: "";
+    background: black;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.option-section,
+.option-section .container,
+.option-section .option-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.option-section .container {
+    z-index: 2;
+}
+
+.option-section p {
+    color: white;
+    letter-spacing: 3px;
+    margin: 17px 0;
+}
+
+.btn-class-option {
+    margin: 15px;
+    width: 250px;
+    padding: 3px 0;
+}
+
+/* Explre Section */
+.explore-section {
+    background-image: url(/images/15.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 700px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-section .col {
+    margin: 0 30px;
+}
+
+.info-box {
+    background-image: url(/images/FE_white.png);
+    background-size: cover;
+    width: 330px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pen-image {
+    width: 42px;
+}
+
+.explore-section-heading {
+    color: #1ad8d3;
+    font-size: 23px;
+}
+
+.explore-section-line {
+    height: 2px;
+    width: 50px;
+    background: #1ad8d3;
+}
+
+.explore-section-content {
+    line-height: 1.9;
+    color: #3b3a3a;
+}
+
+.btn-green {
+    background-color: #1ad8d3;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    margin: 15px 0;
+    padding: 6px 37px;
+}
+
+
+/* About Section */
+.about-section {
+    background-image: url(/images/five-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-section .container {
+    height: 60%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section-topic {
+    font-size: 23px;
+    color: white;
+}
+
+.about-section-line {
+    background: white;
+    height: 2px;
+    width: 25px;
+}
+
+.about-section-content {
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.about-section-content p {
+    line-height: 29px;
+}
+
+.about-section-content div p {
+    margin-bottom: 30px;
+}
+
+
+/* Top Button */
+.top-button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.top-button {
+    width: 35px;
+}
+
+
+/* Footer */
+footer {
+    background: #ececec;
+    opacity: .8;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+
+footer p {
+    color: #808080;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.footer-img-area {
+    display: flex;
+}
+
+footer img {
+    height: 30px;
+    padding: 0 3px;
+}
+
+.footer-phone-number:before {
+    content: "M";
+}
+
+.footer-email:before {
+    content: "E";
+}
+
+.footer-before:before {
+    color: #1ad8d3;
+    margin-right: 15px;
+}
+
+
+/* Test Go Button */
+.go-button {
+    position: fixed;
+    bottom: 20%;
+    right: 0px;
+    height: 70px;
+    opacity: .8;
+    z-index: 3;
+}
