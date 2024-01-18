@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-Enter - 前端轉職資訊</title>
+    <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Loading Page -->
+    <div class="loading-page">
+        <img src="/images/FE_logo-4.png" alt="" class="loading-logo">
+        <div class="loading-buttom-bar"></div>
+    </div>
+
     <!-- NavBar -->
     <nav class="navbar">
         <!-- Logo -->
@@ -29,11 +36,25 @@
                 <a class="nav-link" href="">登入</a>
             </li>
             <li class="nav-item">
-                <img src="/images/FE_search_green.png" alt="search">
+                <img id="search-btn" src="/images/FE_search_green.png" alt="search">
             </li>
         </ul>
     </nav>
 
+    <!-- Navbar Search -->
+    <div>
+        <div class="navbar-search-pop">
+            <p>SEARCH</p>
+            <div>
+                <input type="text">
+                <div class="icon-group">
+                    <img src="/images/microphone.svg" alt="microphone-icon" class="microphone-icon">
+                    <img src="/images/FE_search_green.png" alt="search-icon" class="search-icon">
+                </div>
+            </div>
+        </div>
+        <div class="navbar-search-pop-black"></div>
+    </div>
     <!-- Header -->
     <header id="header">
         <div class="container">
@@ -115,14 +136,16 @@
 
     <!-- top 按鈕 -->
     <section class="top-button-section">
-        <img class="top-button" src="/images/FE_TOP.png" alt="top-button">
+        <a href="#">
+            <img class="top-button" src="/images/FE_TOP.png" alt="top-button">
+        </a>
     </section>
 
     <!-- footer -->
     <footer>
         <div class="container">
             <div>
-                <p>聯絡</p>
+                <p class="contact">聯絡</p>
             </div>
             <div>
                 <p class="footer-phone-number footer-before">0911-598-071</p>
@@ -132,10 +155,14 @@
             </div>
             <div class="footer-img-area">
                 <div class="footer-img">
-                    <img src="/images/new-facebook-blue.svg" alt="facebook">
+                    <a href="https://www.facebook.com/yanru.lin.56/" target="_blank">
+                        <img src="/images/new-facebook-blue.svg" alt="facebook">
+                    </a>
                 </div>
                 <div class="footer-img">
-                    <img src="/images/FE_line.png" alt="line">
+                    <a href="https://line.me/ti/p/KNJ8pyE0rX" target="_blank">
+                        <img src="/images/FE_line.png" alt="line">
+                    </a>
                 </div>
             </div>
         </div>
@@ -145,6 +172,8 @@
     <div>
         <img src="/images/FE_test_go.png" alt="test-go-button" class="go-button">
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
